@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://facts.net/wp-content/uploads/2023/07/43-facts-about-nagpur-1688181848.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#page1 h1 {
+  margin-top: 4vw;
+  font-size: 5vw;
+  font-weight: 600;
+  color: #2f1612;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1e1a2c;
+  padding: 10vw 10vw;
+  color: rgba(255, 255, 255, 0.726);
+}
+
+#page2 p {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 500;
+  /* line-height: 2.5vw; */
+}
+
+#page2b {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #1e1a2c;
+  padding: 10vw 10vw;
+  color: rgba(255, 255, 255, 0.896);
+}
+#page2b h1 {
+  margin-bottom: 2vw;
+  font-size: 5vw;
+  font-weight: 900;
+}
+#ect {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+#ect_p {
+  margin-bottom: 2vw;
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: rgb(127, 127, 127);
+}
+#war {
+  margin-bottom: 2vw;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+.war_head {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.war_p {
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: rgb(127, 127, 127);
+  margin-bottom: 2vw;
+}
+#art {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+#art_p {
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: rgb(127, 127, 127);
+}
+
+
+
+
+
+
+
+#page2c {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #181C14;
+  background-color: #3B3030;
+  padding: 10vw 10vw;
+  color: rgba(255, 255, 255, 0.896);
+}
+#page2c h1 {
+  margin-bottom: 2vw;
+  margin-left: -1.2vw;
+  font-size: 5vw;
+  font-weight: 900;
+}
+
+.gost_head {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.gost_p {
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: rgb(127, 127, 127);
+  margin-bottom: 2vw;
+}
+
+
+
+
+
+
+
+
+
+#connectivity {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("ConnectivityPage.png");
+  background-position: center;
+  background-size: cover;
+}
+#page3 {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f1f1e3;
+  padding-bottom: 5vw;
+  padding-top: 4vw;
+}
+
+#page3 #head {
+  height: 28vh;
+  width: 100vw;
+  padding: 1vw 2vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page3 h1 {
+  color: #444b34;
+  font-size: 3.8vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  min-height: calc(100vh - 28vh);
+  display: flex;
+}
+#content-left {
+  width: 50%;
+  padding: 4vw 0vw 2vw 8vw;
+  /* background-color: pink; */
+}
+
+#content-left p {
+  width: 24vw;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  margin-bottom: 2vw;
+  color: #646f4f;
+}
+
+#explore {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 6vw;
+}
+
+#content-left h4 {
+  font-size: 2vw;
+  font-weight: 600;
+  font-family: "gilroy";
+  color: #646f4f;
+}
+
+#content-left button {
+  color: #fff;
+  background-color: #646f4f;
+  text-decoration: none;
+  border: none;
+  font-size: 1.2vw;
+  height: 1.8vw;
+  padding: 0vw 1.2vw;
+  border-radius: 2vw;
+}
+
+#content-left img {
+  height: 23vw;
+  width: 41vw;
+  border-radius: 2vw;
+  object-fit: cover;
+  object-position: top;
+}
+
+#content-right {
+  width: 50%;
+  padding: 7vw 2vw 2vw 0vw;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+#content-right #img1 {
+  height: 26vw;
+  width: 42vw;
+  border-radius: 2vw;
+  margin-bottom: 1.3vw;
+}
+
+#content-right #img2 {
+  height: 18vw;
+  width: 18vw;
+  border-radius: 1.4vw;
+}
+
+#page4 {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #04364f;
+  padding-bottom: 8vw;
+  padding-top: 4vw;
+}
+
+#page4-top {
+height: 50vh;
+width: 100vw;
+padding: 2vw;
+/* background-color: blue; */
+}
+
+#page4 h1 {
+color: #e3e3c4;
+font-size: 5vw;
+font-weight: 500;
+display: flex;
+justify-content: center;
+}
+#page4 #two-lines {
+  width: 32%;
+  color: #fff;
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-left: 34vw;
+  margin-top: 1.5vw;
+  line-height: 1.5vw;
+}
+
+#page4 #single-line {
+  width: 30%;
+  color: #fff;
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-left: 43vw;
+  line-height: 1.5vw;
+}
+
+#dining-content {
+  min-height: calc(100vh - 50vh);
+  width: 100vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#dining-content #page4-left {
+  height: 80vh;
+  width: 35%;
+  padding: 2vw;
+}
+
+#page4-left img {
+  height: 14vw;
+  width: 20vw;
+  border-radius: 1.5vw;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2vw;
+}
+
+#page4-left h1 {
+  width: 22vw;
+  font-size: 2.7vw;
+  margin-left: -1vw;
+  margin-bottom: 1.2vh;
+  /* background-color: red; */
+}
+
+#page4-left p {
+  width: 19vw;
+  font-size: 1.1vw;
+  color: #fff;
+  /* background-color: red; */
+  text-align: start;
+  margin-left: 0.6vw;
+  line-height: 1.5vw;
+}
+
+#page4-right {
+  height: 100vh;
+  width: 60%;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: yellow; */
+}
+
+#right-part1 {
+  margin-top: 23vh;
+  margin-left: 6.5vw;
+}
+
+#right-part1 > img {
+  height: 14vw;
+  width: 20vw;
+  border-radius: 1.5vw;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2vw;
+}
+
+#right-part1 > h1 {
+  width: 22vw;
+  font-size: 2.7vw;
+  margin-left: -1vw;
+  margin-bottom: 1.2vh;
+}
+
+#right-part1 > p {
+  width: 21vw;
+  font-size: 1.1vw;
+  color: #fff;
+  /* background-color: red; */
+  text-align: start;
+  margin-left: 0.6vw;
+  line-height: 1.5vw;
+}
+#right-part2 > img {
+  height: 14vw;
+  width: 20vw;
+  border-radius: 1.5vw;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2vw;
+}
+
+#right-part2 > h1 {
+  width: 22vw;
+  font-size: 2.7vw;
+  margin-left: 1vw;
+  margin-bottom: 1.2vh;
+}
+
+#right-part2 > p {
+  width: 19.8vw;
+  font-size: 1.1vw;
+  color: #fff;
+  /* background-color: red; */
+  text-align: start;
+  margin-left: 1.1vw;
+  line-height: 1.5vw;
+}
+
+#Dining-location {
+  display: flex;
+  align-items: center;
+  gap: 1.6vw;
+  margin-left: 41vw;
+}
+
+#Dining-location h4 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  font-family: "gilroy";
+  color: #fff;
+}
+
+#Dining-location button {
+  color: #646f4f;
+  background-color: #fff;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  height: 1.8vw;
+  padding: 0.2vw 1vw;
+  border-radius: 2vw;
+}
+
+/* 
+.footer {
+width: 100%;
+height: 92vh;
+background-color: black;
+}
+
+.foot-top {
+display: flex;
+justify-content: space-between;
+}
+
+.btm {
+padding: 2vw 3vw;
+background-color: black;
+color: #BBB8B1;
+}
+
+.foot-top {
+display: flex;
+justify-content: space-between;
+}
+
+#fleft {
+width: 70%;
+}
+
+#fleft h1 {
+font-weight: 100;
+font-size: 2vw;
+}
+#fleft button {
+margin-top: 3vw;
+background-color: black;
+border-radius: 100px;
+color: #BBB8B1;
+border: 1px solid #BBB8B1;
+padding: 1.2vw 1.6vw;
+font-weight: 100;
+font-size: 1vw;
+}
+
+#fleft button:hover {
+background-color: #BBB8B1;
+color: black;
+}
+
+#fryt {
+font-size: 1.5rem;
+}
+
+#fryt h5 {
+margin-bottom: 1.25rem;
+}
+
+#foot-end h1 {
+position: absolute;
+bottom: 0;
+color: #BBB8B1;
+font-weight: 100;
+font-size: 15vw;
+line-height: 1;
+}
+
+#foot-end h1 span {
+font-weight: bold;
+display: inline-block;
+} */

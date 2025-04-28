@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:root {
+    --Skin: #FFA07A;
+    /* Light Salmon */
+    --Saffron: #D2691E;
+    /* Chocolate */
+    --Blue: #2B6C37;
+    /* Deep Greenish Blue */
+    --Red: #8B3E2F;
+    /* Dark Brick Red */
+    --Green: #B3B742;
+    /* Olive Green */
+    --Orange: #BF3A1C;
+    /* Deep Orange */
+    --Brown: #704F28;
+    /* Earth Brown */
+    --dGreen: #254D6C;
+    /* Slate Blue */
+    --Brown2: #963B2A;
+    /* Reddish Brown */
+    --Golden: #B79E3A;
+    /* Golden Yellow */
+    --Maroon: #BF5716;
+    /* Deep Saffron */
+    --black: #000;
+    --white: #fff;
+    --transparent: #00000000;
+}
+
+body {
+    transition: background-color ease-out 0.5s;
+}
+
+body[theme="transparent"] {
+    --nav-bg-color: var(--transparent);
+}
+
+body[theme="transparent"] .section {
+    --nav-text-color: var(--black);
+}
+
+body[theme="Skin"] {
+    background-color: var(--Skin);
+    --nav-bg-color: var(--Skin);
+}
+
+body[theme="Skin"] .section {
+    color: var(--Maroon);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Saffron"] {
+    background-color: var(--Saffron);
+    --nav-bg-color: var(--Saffron);
+}
+
+body[theme="Saffron"] .section {
+    color: var(--Brown2);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Blue"] {
+    background-color: var(--Blue);
+    --nav-bg-color: var(--Blue);
+}
+
+body[theme="Blue"] .section {
+    color: var(--DGreen);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Red"] {
+    background-color: var(--Red);
+    --nav-bg-color: var(--Red);
+}
+
+body[theme="Red"] .section {
+    color: var(--Brown);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Green"] {
+    background-color: var(--Green);
+    --nav-bg-color: var(--Green);
+}
+
+body[theme="Green"] .section {
+    color: var(--Golden);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Orange"] {
+    background-color: var(--Orange);
+    --nav-bg-color: var(--Orange);
+}
+
+body[theme="Orange"] .section {
+    color: var(--Saffron);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Brown"] {
+    background-color: var(--Brown);
+    --nav-bg-color: var(--Brown);
+}
+
+body[theme="Brown"] .section {
+    color: var(--Red);
+    --nav-text-color: var(--black);
+}
+
+body[theme="dGreen"] {
+    background-color: var(--dGreen);
+    --nav-bg-color: var(--dGreen);
+}
+
+body[theme="dGreen"] .section {
+    color: var(--black);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Brown2"] {
+    background-color: var(--Brown2);
+    --nav-bg-color: var(--black);
+}
+
+body[theme="Brown2"] .section {
+    color: var(--Saffron);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Golden"] {
+    background-color: var(--Golden);
+    --nav-bg-color: var(--Golden);
+}
+
+body[theme="Golden"] .section {
+    color: var(--Green);
+    --nav-text-color: var(--black);
+}
+
+body[theme="Maroon"] {
+    background-color: var(--Maroon);
+    --nav-bg-color: var(--Maroon);
+}
+
+body[theme="Maroon"] .section {
+    color: var(--Skin);
+    --nav-text-color: var(--black);
+}
+
+body[theme="black"] {
+    background-color: var(--black);
+    --nav-bg-color: var(--black);
+}
+
+body[theme="black"] .section {
+    color: var(--white);
+    --nav-text-color: var(--white);
+}
+
+body #nav {
+    transition: background-color ease-out 0.5s;
+}
+
+body[theme="white"] {
+    background-color: var(--white);
+    --nav-bg-color: var(--white);
+}
+
+body[theme="white"] .section {
+    color: var(--black);
+    --nav-text-color: var(--black);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: black; */
+}
+
+#main1 {
+    height: 100vh;
+    width: 100%;
+
+}
+
+#back {
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#top {
+    pointer-events: none;
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#working-area {
+    z-index: 1;
+    width: 80%;
+    height: 100%;
+    max-width: 1920px;
+    /* background-color: gray; */
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav {
+    background-color: var(--nav-bg-color);
+    height: 100px;
+    width: 100%;
+    padding: 0px 50px;
+    position: fixed;
+    z-index: 999;
+    color: var(--nav-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav h1 {
+    font-size: 2.5vw;
+}
+
+#nav button {
+    background-color: #FF6014;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10px;
+}
+
+#hero {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+
+#heroleft {
+    min-width: 80%;
+    /* background-color: yellow; */
+}
+
+#heroleft .elem {
+    /* background-color: red; */
+    top: 20px;
+    height: 7vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    font-weight: 100;
+    font-size: 6vw;
+    color: white;
+    line-height: 0.9;
+}
+
+#herobutton {
+    padding: 0.5vw 2vw;
+    font-family: "kajiro";
+    background-color: #00000069;
+    font-size: 3vw;
+    margin-top: 2vw;
+    pointer-events: all;
+}
+
+
+.welcome-section {
+    height: 100%;
+    position: relative;
+    /* background: linear-gradient(135deg, #FFE4B5, #F08080);  */
+    padding: 100px 50px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.welcome-content {
+    max-width: 800px;
+    z-index: 2;
+    /* color: #ffffff; */
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.large-text {
+    font-size: 15rem;
+    color: rgba(255, 255, 255, 0.656);
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.intro-text {
+    position: relative;
+    left: 700px;
+    top: 50px;
+    z-index: 3;
+}
+
+.welcome-subtitle {
+    font-size: 2rem;
+    /* color: #ffffff; */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-top: 90px;
+    max-width: 600px;
+}
+
+/* Compass Image */
+.compass-image {
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    z-index: 1;
+    animation: rotateCompass 10s linear infinite;
+}
+
+/* Compass Rotation Animation */
+@keyframes rotateCompass {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* history */
+/* General Styles */
+
+/* General settings */
+
+
+
+
+/* Fullview Section Styling */
+.fullview {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    justify-content: space-between;
+    /* Space between text and images */
+    align-items: center;
+    /* Center content vertically */
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content Styling */
+.fullview .content {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center text horizontally */
+    justify-content: center;
+    /* Center text vertically */
+    text-align: center;
+    /* Center text inside container */
+}
+
+/* Heading Styling */
+.fullview .content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Text underline effect on hover */
+.fullview .content h2:hover {
+    text-decoration: wavy;
+    color: #0000007e;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow effect */
+}
+
+.fullview .content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 80%;
+    opacity: 0.9;
+}
+
+/* Image Container Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Ensures parts outside the container are hidden */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for zoom and shadow effect */
+}
+
+.fullview .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    /* Space out images */
+    align-items: center;
+    height: 100%;
+}
+
+.fullview .image-container .img-layer {
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    /* Each image takes 30% of the container */
+    height: 80%;
+    /* Proportional height */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+    filter: grayscale(100%);
+    /* Grayscale effect */
+}
+
+/* Hover effect for grayscale to color and box-shadow */
+.image-container .img-layer:hover {
+    transform: scale(1.2);
+    /* Zoom on hover */
+    filter: grayscale(0);
+    /* Remove grayscale on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    /* Enhanced shadow effect */
+}
+
+/* Alternate content and image positions for variety */
+.fullview:nth-child(even) {
+    flex-direction: row-reverse;
+    /* Switch text and image position for even sections */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fullview {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .fullview .content {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.reveal-text {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Move the text up initially */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    margin-bottom: 30px;
+}
+
+.reveal-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Reset position */
+}
+
+.fullview1 #img {
+    /* background-color: red; */
+    /* flex: 1; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 100%; */
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+#img .img-lyr { 
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+    filter: grayscale(100%);
+    }
+#img .img-lyr:hover {
+    transform: scale(1.2);
+    /* Zoom on hover */
+    filter: grayscale(0);
+    /* Remove grayscale on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    /* Enhanced shadow effect */
+}
+
+#img img{
+    height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.craft {
+    /* background-color: blue; */
+    display: flex;
+    gap: 2.5rem;
+    /* padding-top: 2.5rem; */
+    padding-bottom: 2.5rem;
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
+  .ltext {
+    /* background-color: red; */
+    position: sticky;
+    top: 3rem;
+    left: 0;
+    /* padding-top: 2.5rem; */
+    width: 90%;
+    height: 90vh;
+  }
+  
+  
+.bluelayer {
+    height: 0%;
+    width: 100%;
+    background-color: #2d7880;
+    position: absolute;
+    left: 50%;
+    transition: all ease 0.5s;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.listelem:hover .bluelayer {
+    height: 100%;
+}
+
+.listelem:hover {
+    color: white;
+}
+
+
+.footer {
+    width: 100%;
+    height: 92vh;
+  }
+  .btm {
+    height: 100%;
+    padding: 2vw 3vw;
+    background-color: black;
+    color: #BBB8B1;
+    /* font-family: nb; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .foot-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #fleft {
+    width: 70%;
+    /* background-color: red; */
+  }
+  
+  #fleft h1 {
+    font-weight: 100;
+    font-size: 2vw;
+  }
+  
+  #fleft button {
+    margin-top: 3vw;
+    background-color: black;
+    border-radius: 100px;
+    color: #BBB8B1;
+    border: 1px solid #BBB8B1;
+    padding: 1.2vw 1.6vw;
+    font-weight: 100;
+    font-size: 1vw;
+  }
+  
+  #fleft button:hover {
+    background-color: #BBB8B1;
+    color: black;
+  }
+  
+  #fryt {
+    font-size: 1.5rem;
+  }
+  
+  #fryt h5 {
+    margin-bottom: 1.25rem;
+  }
+  #foot-end h1 {  
+transform: translateY(-2vw);
+    /* position: absolute; */
+    color: #BBB8B1;
+    font-weight: 100;
+    font-size: 16vw;
+    line-height: 1;
+    /* letter-spacing: 0; */
+  }
+  
+  #foot-end h1 span {
+    font-weight: bold;
+    /* font-family: rejoy; */
+    display: inline-block;
+  }
+  
+.listelem:hover .picture {
+    opacity: 1;
+}
+
+.listelem:hover {
+    background-color: #a6a6a6;
+    /* Change background color on hover */
+}
+
+.listelem .left:hover {
+    color: #ffffff;
+    /* Change text color on hover */
+}
